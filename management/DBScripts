@@ -1,0 +1,19 @@
+## Create table script
+CREATE TABLE apartment (
+    ID int NOT NULL AUTO_INCREMENT,
+    apartmentName varchar(1000) NOT NULL,
+    address varchar(2000),
+    floors int,
+    oneBHK long,
+    twoBHK long,
+    threeBHK long,
+    city varchar(40) NOT NULL,
+    retired boolean,
+    PRIMARY KEY (ID)
+);
+commit;
+
+
+## Delete table script
+DROP TABLE apartment;
+commit;

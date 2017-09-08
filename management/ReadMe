@@ -1,0 +1,11 @@
+1) Checkout project from GitHub
+2) Right click on project, Select configure
+3) Select convert to maven project
+4) Right click on project Do maven clean and install
+5) Open com.apartment.management.config.PersistanceJpaConfig.getDataSource() method
+6) Update the DB Details
+7) Right click on project select Run as Option
+8) select "Maven Build" option
+9) In Goals add "clean install tomcat7:run"
+10)select source and add "workspace"
+11) Run the project
