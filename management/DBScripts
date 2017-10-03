@@ -1,4 +1,4 @@
-## Create table script
+## Create apartment table script
 CREATE TABLE apartment (
     ID int NOT NULL AUTO_INCREMENT,
     apartmentName varchar(1000) NOT NULL,
@@ -13,7 +13,43 @@ CREATE TABLE apartment (
 );
 commit;
 
-
-## Delete table script
+## Delete apartment script
 DROP TABLE apartment;
+commit;
+
+
+CREATE TABLE owner_table (
+    ID int NOT NULL AUTO_INCREMENT,
+    ownerName varchar(1000) NOT NULL,
+    apartmentDetails varchar(2000),
+    floors int,
+    emptyFlats long,
+    fullFlats long,
+    apartmentID int,
+    retired boolean,
+    PRIMARY KEY (ID)
+);
+commit;
+
+## Delete owner_table script
+DROP TABLE owner_table;
+commit;
+
+
+CREATE TABLE tenant (
+    ID int NOT NULL AUTO_INCREMENT,
+    tenantFirstName varchar(1000) NOT NULL,
+    tenantLastName varchar(2000),
+    apartmentName varchar(2000),
+    flatNo long,
+    NoOfTenants long,
+    apartmentID int,
+	ownerID int,
+    retired boolean,
+    PRIMARY KEY (ID)
+);
+commit; 
+
+## Delete tenant script
+DROP TABLE tenant;
 commit;
