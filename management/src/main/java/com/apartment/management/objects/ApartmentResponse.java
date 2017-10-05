@@ -52,5 +52,11 @@ public class ApartmentResponse {
 	public void setAddress(String address) {
 		this.address = address;
 	}
-
+	@Override
+	public String toString() {
+		return "ApartmentResponse id=" + id + ", apartmentName=" + apartmentName + ", floors=" + floors + ", oneBHK="
+				+ oneBHK + ", twoBHK=" + twoBHK + ", threeBHK=" + threeBHK + ", address=" + address + " ";
+	}
+	
+	
 }
